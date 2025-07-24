@@ -1,7 +1,0 @@
-
-; /* Start:"a:4:{s:4:"full";s:97:"/local/templates/aspro-lite/components/bitrix/news.list/services-list/script.min.js?1736450040750";s:6:"source";s:79:"/local/templates/aspro-lite/components/bitrix/news.list/services-list/script.js";s:3:"min";s:83:"/local/templates/aspro-lite/components/bitrix/news.list/services-list/script.min.js";s:3:"map";s:87:"/local/templates/aspro-lite/components/bitrix/news.list/services-list/script.min.js.map";}"*/
-$(document).ready((function(){$(document).on("mousewheel mouseenter mouseleave mousemove touchstart touchmove",".services-list__item--has-additional-text",(function(e){var $scroll=$(this).find(".scroll-deferred:not(.mCustomScrollbar)");$scroll.length&&$scroll.mCustomScrollbar($scroll.data("plugin-options"))})),$(document).on("click",".services-list__item--has-additional-text",(function(e){if(e&&e.target&&"A"!==e.target.tagName&&!$(e.target).closest(".mCSB_scrollTools").length){var $link=$(this).find(".services-list__item-title a");$link.length&&(window.getSelection&&!window.getSelection().toString()||document.selection&&!document.selection.createRange().text)&&(location.href=$link.attr("href"))}}))}));
-/* End */
-;; /* /local/templates/aspro-lite/components/bitrix/news.list/services-list/script.min.js?1736450040750*/
-
-//# sourceMappingURL=page_bb64fe367a7b0300dfe701de7ecc1c7d.map.js
