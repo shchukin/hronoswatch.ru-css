@@ -1,0 +1,29 @@
+.compare {
+
+}
+    .compare__preview {
+        border: 2px solid #C49C65;
+        border-radius: 16px;
+        overflow: hidden; /* обрезаем уголки */
+    }
+        .compare__preview img-comparison-slider {
+            width: 100%;
+            vertical-align: top;
+        }
+            .compare__preview img {
+                vertical-align: top;
+                width: 100%;
+                height: auto;
+            }
+
+            .compare__preview * {
+                outline: none !important;
+            }
+
+    .compare__description {
+        margin-top: 21px;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 22px;
+        color: #C49C65;
+    }

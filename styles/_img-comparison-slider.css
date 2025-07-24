@@ -1,0 +1,8 @@
+/* stylelint-disable */
+img-comparison-slider {
+    --divider-width: 3px; /* Толщина разделителя */
+    --divider-color: #C49C65; /* Цвет разделителя */
+    --default-handle-color: #C49C65;
+    --divider-shadow: 0 0 5px #C49C65;
+}
+/* stylelint-enable */
