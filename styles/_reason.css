@@ -1,0 +1,48 @@
+.reason {
+    position: relative;
+    border: 2px solid #C49C65;
+    border-radius: 16px;
+    padding: 22px;
+    overflow: hidden; /* обрезаем фон при наведении */
+}
+    .reason::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        width: 132px;
+        height: 148px;
+        background-image: url("../vectors/reason.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right top;
+        opacity: 0;
+        transition: opacity var(--transition-hover);
+    }
+
+.reason:hover::before {
+    opacity: 100%;
+}
+    .reason__index {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        color: #C49C65;
+    }
+
+    .reason__title {
+        margin-top: 24px;
+        min-height: 48px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+
+    .reason__description {
+        margin-top: 16px;
+        min-height: 38px;
+        font-size: 16px;
+        line-height: 19px;
+    }
