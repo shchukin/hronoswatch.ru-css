@@ -128,7 +128,7 @@
 /* Focused */
 
 .choice__widget:focus-visible ~ .choice__icon {
-    outline: auto;
+    outline: auto !important;
 }
 
 
