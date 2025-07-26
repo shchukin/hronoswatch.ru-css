@@ -1,0 +1,266 @@
+.tabs {
+    position: relative;
+}
+    .tabs__nav {
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        border: 1px solid #C49C65;
+        border-radius: 25px;
+        padding: 4px;
+    }
+        .tabs__tag {
+            border: none;
+            padding: 10px 16px;
+            background-color: transparent;
+            border-radius: 31px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #C49C65;
+            cursor: pointer;
+            transition: background-color var(--transition-hover),
+                        color var(--transition-hover);
+        }
+
+        .tabs__tag:hover {
+            background-color: rgb(196 156 101 / 10%);
+        }
+
+        .tabs__tag--current,
+        .tabs__tag--current:hover {
+            background-color: #C49C65;
+            color: #FFFFFF;
+            cursor: default;
+        }
+
+    .tabs__bodies {
+
+    }
+        .tabs__item {
+            display: none;
+        }
+
+        .tabs__item--current {
+            display: block;
+            animation: var(--slide-bottom);
+        }
+
+
+
+@media (1850px <= width) {
+
+    .tabs {
+
+    }
+        .tabs__handler {
+
+        }
+
+        .tabs__nav {
+            gap: 24px;
+        }
+            .tabs__tag {
+                padding: 15px 23px;
+                border-radius: 31px;
+                font-size: 26px;
+                line-height: 30px;
+            }
+
+            .tabs__tag:hover {
+
+            }
+
+            .tabs__tag--current,
+            .tabs__tag--current:hover {
+
+            }
+
+        .tabs__bodies {
+            margin-top: 40px;
+        }
+            .tabs__item {
+
+            }
+
+            .tabs__item--current {
+
+            }
+}
+
+
+
+@media (width < 740px) {
+
+    .tabs {
+
+    }
+        .tabs__handler {
+            display: block;
+            padding: 13px 48px 13px 24px;
+            width: 100%;
+            background-color: #E4BB6B;
+            border-radius: 25px;
+            font-family: var(--font-heading);
+            font-weight: normal;
+            font-style: italic;
+            font-size: 18px;
+            line-height: 22px;
+            color: #303F64;
+            text-align: left;
+            text-transform: uppercase;
+        }
+            .tabs__handler::after {
+                content: "";
+                position: absolute;
+                right: 24px;
+                top: 50%;
+                margin-top: -12px;
+                width: 24px;
+                height: 24px;
+                background-image: url("../vectors/tabs-handler.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+        .tabs__nav {
+            margin-top: -24px;
+            padding-top: 30px;
+            padding-bottom: 8px;
+            background-color: #FFFFFF;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: none;
+            /*align-items: flex-start;*/
+            /*flex-wrap: wrap;*/
+            /*gap: 18px;*/
+        }
+
+        .tabs--expanded .tabs__nav {
+            display: block;
+        }
+
+            .tabs__tag {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 12px 24px;
+                /*background-color: transparent;*/
+                border: none;
+                /*border-radius: 31px;*/
+                /*font-family: var(--font-heading);*/
+                /*font-weight: 500;*/
+                /*font-style: italic;*/
+                font-size: 18px;
+                line-height: 22px;
+                color: #303F64;
+                text-align: left;
+                /*text-transform: uppercase;*/
+                /*cursor: pointer;*/
+                /*transition: background-color var(--transition-hover),*/
+                /*            border-color var(--transition-hover),*/
+                /*            color var(--transition-hover);*/
+            }
+
+            .tabs__tag:hover {
+                /*background-color: rgb(255 255 255 / 10%);*/
+            }
+
+            .tabs__tag--current,
+            .tabs__tag--current:hover {
+                background-color: transparent;
+                /*border-color: transparent;*/
+                /*color: #0B1E3A;*/
+                cursor: pointer;
+            }
+                .tabs__tag--current::before {
+                    content: "";
+                    display: block;
+                    width: 9px;
+                    height: 9px;
+                    background-color: currentColor;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+
+        .tabs__bodies {
+            /*margin-top: 30px;*/
+        }
+            .tabs__item {
+                /*display: none;*/
+            }
+
+            .tabs__item--current {
+                /*display: block;*/
+                /*animation: var(--slide-bottom);*/
+            }
+}
+
+@media (width < 410px) {
+
+    .tabs__handler {
+        font-size: 16px;
+        line-height: 22px;
+    }
+        .tabs__handler::after {
+            right: 18px;
+        }
+
+    .tabs__tag {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+        .tabs__tag--current::before {
+            width: 8px;
+            height: 8px;
+        }
+}
+
+@media (width < 370px) {
+
+    .tabs__handler {
+        font-size: 15px;
+        line-height: 22px;
+    }
+        .tabs__handler::after {
+            right: 16px;
+        }
+
+    .tabs__tag {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+        .tabs__tag--current::before {
+            width: 7px;
+            height: 7px;
+        }
+}
+
+
+@media (width < 350px) {
+
+    .tabs__handler {
+        font-size: 14px;
+        line-height: 22px;
+    }
+        .tabs__handler::after {
+            right: 14px;
+        }
+
+    .tabs__tag {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
