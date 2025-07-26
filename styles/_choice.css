@@ -1,0 +1,162 @@
+.choice {
+    position: relative;
+    display: block;
+    width: fit-content;
+    min-height: 30px;
+    cursor: pointer;
+}
+
+.choice--inverted {
+
+}
+    .choice__widget {
+        opacity: 0;
+        position: absolute;
+        left: 2px;
+        top: 10px;
+    }
+
+    .choice__label {
+        position: relative;
+        display: flex;
+        vertical-align: top;
+        padding: 5px 0 5px 28px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        user-select: none;
+        transition: color var(--transition-hover);
+    }
+
+    .choice--inverted .choice__label {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+
+    .choice__icon {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+        box-shadow: inset 0 0 0 1px #FFFFFF;
+        background-color: transparent;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 4px;
+        pointer-events: none; /* Since this icon is positioned higher than label, let's make it possible to click through, so that the user interacts only with the label. For now, this icon won't generate its own cursor, for example. */
+        transition: box-shadow var(--transition-hover);
+    }
+
+    .choice--inverted .choice__icon {
+        width: 18px;
+        height: 18px;
+        box-shadow: inset 0 0 0 1px #57585A;
+    }
+
+    .choice__widget[type="checkbox"] ~ .choice__icon {
+
+    }
+
+    .choice__widget[type="radio"] ~ .choice__icon {
+        border-radius: 50%;
+    }
+
+
+/* Hovered */
+/* не :disabled, и не чекнутая радиокнопка */
+.choice:hover .choice__widget:not(:disabled):not([type="radio"]:checked) ~ .choice__label {
+    /*color: var(--action-color);*/
+}
+
+.choice--inverted:hover .choice__widget:not(:disabled):not([type="radio"]:checked) ~ .choice__label {
+    /*color: #0B1E3A;*/
+}
+
+
+
+.choice:hover .choice__widget:not(:disabled):not([type="radio"]:checked) ~ .choice__icon {
+    box-shadow: inset 0 0 0 1px var(--action-color);
+}
+
+.choice--inverted:hover .choice__widget:not(:disabled):not([type="radio"]:checked) ~ .choice__icon {
+    box-shadow: inset 0 0 0 1px #9B9B9B;
+}
+
+
+/* Checked */
+
+.choice__widget:checked ~ .choice__label {
+
+}
+
+.choice__widget:checked ~ .choice__icon {
+
+}
+
+
+.choice__widget[type="checkbox"]:checked ~ .choice__icon {
+    background-color: transparent;
+    background-image: url("../vectors/choice-checkbox.svg");
+}
+
+.choice--inverted .choice__widget[type="checkbox"]:checked ~ .choice__icon {
+    /*background-color: #E4BB6B;*/
+}
+
+.choice__widget[type="radio"]:checked ~ .choice__icon {
+    background-image: url("../vectors/choice-radio.svg");
+}
+
+
+/* Checked & Hovered */
+
+.choice:hover .choice__widget[type="checkbox"]:checked ~ .choice__icon {
+    background-color: var(--action-color);
+    box-shadow: inset 0 0 0 1px var(--action-color);
+}
+
+.choice__widget[type="radio"]:checked ~ .choice__label {
+    cursor: default; /* checked radio button can’t be hovered */
+}
+
+
+
+/* Focused */
+
+.choice__widget:focus-visible ~ .choice__icon {
+    outline: auto;
+}
+
+
+/* Disabled */
+.choice__widget:disabled ~ .choice__label {
+    cursor: default;
+    color: var(--disabled-color);
+}
+
+.choice__widget[type="checkbox"]:disabled ~ .choice__icon,
+.choice:hover .choice__widget[type="checkbox"]:disabled ~ .choice__icon {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px var(--disabled-color);
+}
+
+.choice__widget[type="checkbox"]:disabled:checked ~ .choice__icon,
+.choice:hover .choice__widget[type="checkbox"]:disabled:checked ~ .choice__icon {
+    background-color: var(--disabled-color);
+}
+
+
+
+.choice__widget[type="radio"]:disabled ~ .choice__icon,
+.choice:hover .choice__widget[type="radio"]:disabled ~ .choice__icon {
+    box-shadow: inset 0 0 0 1px var(--disabled-color);
+}
+
+.choice__widget[type="radio"]:disabled:checked ~ .choice__icon,
+.choice:hover .choice__widget[type="radio"]:disabled:checked ~ .choice__icon {
+    background-image: url("../vectors/choice-radio-disabled.svg");
+}
