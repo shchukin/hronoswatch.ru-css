@@ -1,0 +1,51 @@
+.location {
+    display: grid;
+    grid-template-columns: 953fr 487fr;
+}
+    .location__body {
+        border: 1px solid #C49C65;
+        height: 680px;
+    }
+
+    .location__sidebar {
+
+    }
+        .location__navigation {
+
+        }
+            .location__tag {
+                margin-left: -1px;
+                margin-top: -1px;
+                border: 1px solid #C49C65;
+                padding: 24px 40px;
+            }
+
+            .location__tag:first-child {
+                margin-top: 0;
+            }
+                .location__address {
+
+                }
+
+                .location__contacts {
+
+                }
+                    .location__channel {
+
+                    }
+
+                    .location__working-hours {
+
+                    }
+
+                .location__media {
+
+                }
+                    .location__net {
+
+                    }
+
+
+        .location__footer {
+
+        }
