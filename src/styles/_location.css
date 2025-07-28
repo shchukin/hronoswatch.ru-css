@@ -93,11 +93,9 @@
         padding-bottom: 106px;
         display: flex;
         flex-direction: column;
-        /*grid-template-columns: 953fr 487fr;*/
     }
         .location__body {
-            /*border: 1px solid #C49C65;*/
-            /*height: 680px;*/
+
         }
 
         .location__sidebar {
@@ -107,75 +105,52 @@
 
             }
                 .location__tag {
-                    /*margin-left: -1px;*/
-                    /*margin-top: -1px;*/
-                    /*border: 1px solid #C49C65;*/
                     padding: 15px 19px;
                 }
 
                 .location__tag:first-child {
-                    /*margin-top: 0;*/
+
                 }
                     .location__address {
-                        /*font-weight: 600;*/
-                        /*font-size: 16px;*/
-                        /*line-height: 19px;*/
+
                     }
 
                     .location__item-body {
                         margin-top: 7px;
-                        /*display: flex;*/
-                        /*align-items: center;*/
-                        /*gap: 40px;*/
                     }
                         .location__contacts {
 
                         }
                             .location__channel {
-                                /*display: block;*/
-                                /*width: fit-content;*/
                                 padding-top: 3px;
                                 padding-bottom: 3px;
-                                /*font-size: 14px;*/
-                                /*line-height: 17px;*/
-                                /*color: inherit;*/
                             }
 
                             .location__working-hours {
-                                /*margin-top: 10px;*/
-                                /*font-size: 14px;*/
-                                /*line-height: 17px;*/
+
                             }
 
                         .location__media {
-                            /*margin-left: auto;*/
-                            /*display: flex;*/
-                            /*align-items: flex-start;*/
+
                         }
                             .location__net {
-                                /*padding: 8px;*/
+
                             }
                                 .location__icon {
-                                    /*fill: currentColor;*/
-                                    /*vertical-align: top;*/
+
                                 }
 
 
             .location__footer {
-                /*margin-top: 40px;*/
-                /*display: flex;*/
-                /*align-items: flex-start;*/
-                /*justify-content: space-evenly;*/
                 position: absolute;
                 bottom: 24px;
                 left: 0;
                 right: 0;
             }
                 .location__footer .btn {
-                    /*gap: 10px;*/
-                    /*border-radius: 22px;*/
+
                 }
                     .location__footer .btn-icon {
-                        /*fill: currentColor;*/
+
                     }
 }

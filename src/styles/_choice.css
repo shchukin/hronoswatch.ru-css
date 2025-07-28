@@ -69,11 +69,11 @@
 /* Hovered */
 /* не :disabled, и не чекнутая радиокнопка */
 .choice:hover .choice__widget:not(:disabled):not([type="radio"]:checked) ~ .choice__label {
-    /*color: var(--action-color);*/
+
 }
 
 .choice--inverted:hover .choice__widget:not(:disabled):not([type="radio"]:checked) ~ .choice__label {
-    /*color: #0B1E3A;*/
+
 }
 
 
@@ -104,7 +104,7 @@
 }
 
 .choice--inverted .choice__widget[type="checkbox"]:checked ~ .choice__icon {
-    /*background-color: #E4BB6B;*/
+
 }
 
 .choice__widget[type="radio"]:checked ~ .choice__icon {
