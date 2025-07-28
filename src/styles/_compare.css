@@ -30,3 +30,34 @@
         line-height: 22px;
         color: #C49C65;
     }
+
+
+
+@media (max-width: 767px) {
+
+    .compare {
+
+    }
+        .compare__preview {
+            border-radius: 12px;
+        }
+            /* stylelint-disable */
+            .compare__preview img-comparison-slider {
+
+            }
+            /* stylelint-enable */
+
+                .compare__preview img {
+
+                }
+
+                .compare__preview * {
+
+                }
+
+        .compare__description {
+            margin-top: 16px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+}

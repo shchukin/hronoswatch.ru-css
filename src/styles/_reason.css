@@ -46,3 +46,38 @@
         font-size: 16px;
         line-height: 19px;
     }
+
+
+
+@media (max-width: 767px) {
+
+    .reason {
+        border-radius: 10px;
+        padding: 14px;
+    }
+        .reason::before {
+            width: 94px;
+            height: 105px;
+            opacity: 1;
+        }
+
+    .reason:hover::before {
+
+    }
+        .reason__index {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        .reason__title {
+            margin-top: 16px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .reason__description {
+            margin-top: 12px;
+            font-size: 15px;
+            line-height: 18px;
+        }
+}

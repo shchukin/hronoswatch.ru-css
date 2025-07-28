@@ -70,14 +70,10 @@
 @media (max-width: 767px) {
     
     .comment {
-        /*border: 1px solid #C49C65;*/
-        /*padding: 20px 21px;*/
-        /*border-radius: 10px;*/
+
     }
         .comment__head {
-            /*display: flex;*/
-            /*align-items: flex-start;*/
-            /*gap: 24px;*/
+
         }
             .comment__summary {
 
@@ -86,15 +82,12 @@
                     margin-top: 2px;
                     font-size: 12px;
                     line-height: 14px;
-                    /*color: #585858;*/
                 }
 
                 .comment__name {
                     margin-top: 8px;
-                    /*font-weight: bold;*/
                     font-size: 16px;
                     line-height: 19px;
-                    /*color: #000000;*/
                 }
 
                 .comment__rating {
@@ -102,19 +95,16 @@
                 }
 
             .comment__author {
-                /*margin-left: auto;*/
+
             }
                 .comment__photo {
-                    /*vertical-align: top;*/
                     width: 44px;
                     height: 44px;
                 }
 
         .comment__message {
-            /*margin-top: 16px;*/
             font-size: 15px;
             line-height: 18px;
-            /*color: #585858;*/
         }
 
         .comment__link {
@@ -129,6 +119,6 @@
         }
 
         .comment__date:hover {
-            /*color: #585858;*/
+
         }
 }
