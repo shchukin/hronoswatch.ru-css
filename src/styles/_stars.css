@@ -1,0 +1,17 @@
+.stars {
+    margin-left: -4px;
+    margin-right: -4px;
+    width: 124px;
+    height: 20px;
+    background-image: url("../vectors/stars-background.svg");
+    background-size: 24px 20px;
+    background-repeat: repeat-x;
+    background-position: left top;
+}
+    .stars__progress {
+        height: 20px;
+        background-image: url("../vectors/stars-fill.svg");
+        background-size: 24px 20px;
+        background-repeat: repeat-x;
+        background-position: left top;
+    }
