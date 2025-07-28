@@ -15,10 +15,15 @@
     <link href="../legacy/default_1b388ebb12ad57c057401504cc732143_v1.css" rel="stylesheet">
     <link href="../legacy/template_e9f25ae1170003f978181c35715cb564_v1.css" data-template-style="true" rel="stylesheet">
 
-    <!-- Anton's update -->
-    <link href="../styles/anton-update.css" data-template-style="true" rel="stylesheet">
+    <!-- Anton's vendors -->
+    <link rel="stylesheet" href="../vendors/swiper/swiper-bundle.min.css">
+    <script src="../vendors/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="../vendors/img-comparison-slider/img-comparison-slider.css">
     <script src="../vendors/img-comparison-slider/img-comparison-slider.js"></script>
+
+    <!-- Anton's update -->
+    <link href="../styles/anton-update.css" data-template-style="true" rel="stylesheet">
+
 
     <style>html {
         --border-radius: 8px;
@@ -1293,35 +1298,303 @@
                     <br>
                     <!--/temp -->
 
-                    <div class="grid-list grid-list--items-3-992 grid-list--items-2-768">
-                        <div class="comment">
-                            <div class="comment__head">
-                                <div class="comment__summary">
-                                    <div class="comment__prefix">
-                                        должность клиента
-                                    </div>
-                                    <div class="comment__name">
-                                        Лидия Петрова
-                                    </div>
-                                    <div class="comment__rating">
-                                        <div class="stars">
-                                            <div class="stars__progress" style="width: 50%;"></div>
+                    <div class="swiper  swiper--js-init-feedback  swiper--css-default-skin">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="comment">
+                                    <div class="comment__head">
+                                        <div class="comment__summary">
+                                            <div class="comment__prefix">
+                                                должность клиента
+                                            </div>
+                                            <div class="comment__name">
+                                                Лидия Петрова
+                                            </div>
+                                            <div class="comment__rating">
+                                                <div class="stars">
+                                                    <div class="stars__progress" style="width: 50%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment__author"><!-- comment__author можно сделать тегом <a> -->
+                                            <img class="comment__photo" src="../content/comment-placeholder.svg" width="60" height="60" alt="">
                                         </div>
                                     </div>
+                                    <div class="comment__message">
+                                        Lorem ipsum dolor sit amet consectetur. Luctus senectus est quam sit vivamus sed feugiat in sed. Viverra nibh pulvinar purus scelerisque enim. Tempor mi sed quam cras faucibus.
+                                        Lorem ipsum dolor sit amet consectetur. Luctus senectus est quam sit vivamus sed feugiat in sed. Viverra nibh pulvinar purus scelerisque enim. Tempor mi sed quam cras faucibus.
+                                    </div>
+                                    <div class="comment__link">
+                                        <a class="link" href="#">Читать на яндекс-картах</a>
+                                    </div>
+                                    <a class="comment__date" name="fake-link-to-prevent-date-parsing-by-browser">
+                                        21 октября 2024
+                                    </a>
                                 </div>
-                                <div class="comment__author"><!-- comment__author можно сделать тегом <a> -->
-                                    <img class="comment__photo" src="../content/comment-placeholder.svg" width="60" height="60" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="comment">
+                                    <div class="comment__head">
+                                        <div class="comment__summary">
+                                            <div class="comment__prefix">
+                                                должность клиента
+                                            </div>
+                                            <div class="comment__name">
+                                                Лидия Петрова
+                                            </div>
+                                            <div class="comment__rating">
+                                                <div class="stars">
+                                                    <div class="stars__progress" style="width: 50%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment__author"><!-- comment__author можно сделать тегом <a> -->
+                                            <img class="comment__photo" src="../content/comment-placeholder.svg" width="60" height="60" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="comment__message">
+                                        Lorem ipsum dolor sit amet consectetur. Luctus senectus est quam sit vivamus sed feugiat in sed. Viverra nibh pulvinar purus scelerisque enim. Tempor mi sed quam cras faucibus.
+                                    </div>
+                                    <div class="comment__link">
+                                        <a class="link" href="#">Читать на яндекс-картах</a>
+                                    </div>
+                                    <a class="comment__date" name="fake-link-to-prevent-date-parsing-by-browser">
+                                        21 октября 2024
+                                    </a>
                                 </div>
                             </div>
-                            <div class="comment__message">
-                                Lorem ipsum dolor sit amet consectetur. Luctus senectus est quam sit vivamus sed feugiat in sed. Viverra nibh pulvinar purus scelerisque enim. Tempor mi sed quam cras faucibus.
+                            <div class="swiper-slide">
+                                <div class="comment">
+                                    <div class="comment__head">
+                                        <div class="comment__summary">
+                                            <div class="comment__prefix">
+                                                должность клиента
+                                            </div>
+                                            <div class="comment__name">
+                                                Лидия Петрова
+                                            </div>
+                                            <div class="comment__rating">
+                                                <div class="stars">
+                                                    <div class="stars__progress" style="width: 50%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment__author"><!-- comment__author можно сделать тегом <a> -->
+                                            <img class="comment__photo" src="../content/comment-placeholder.svg" width="60" height="60" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="comment__message">
+                                        Lorem ipsum dolor sit amet consectetur. Luctus senectus est quam sit vivamus sed feugiat in sed. Viverra nibh pulvinar purus scelerisque enim. Tempor mi sed quam cras faucibus.
+                                    </div>
+                                    <div class="comment__link">
+                                        <a class="link" href="#">Читать на яндекс-картах</a>
+                                    </div>
+                                    <a class="comment__date" name="fake-link-to-prevent-date-parsing-by-browser">
+                                        21 октября 2024
+                                    </a>
+                                </div>
                             </div>
-                            <div class="comment__link">
-                                <a class="link" href="#">Читать на яндекс-картах</a>
+                            <div class="swiper-slide">
+                                <div class="comment">
+                                    <div class="comment__head">
+                                        <div class="comment__summary">
+                                            <div class="comment__prefix">
+                                                должность клиента
+                                            </div>
+                                            <div class="comment__name">
+                                                Лидия Петрова
+                                            </div>
+                                            <div class="comment__rating">
+                                                <div class="stars">
+                                                    <div class="stars__progress" style="width: 50%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment__author"><!-- comment__author можно сделать тегом <a> -->
+                                            <img class="comment__photo" src="../content/comment-placeholder.svg" width="60" height="60" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="comment__message">
+                                        Lorem ipsum dolor sit amet consectetur. Luctus senectus est quam sit vivamus sed feugiat in sed. Viverra nibh pulvinar purus scelerisque enim. Tempor mi sed quam cras faucibus.
+                                    </div>
+                                    <div class="comment__link">
+                                        <a class="link" href="#">Читать на яндекс-картах</a>
+                                    </div>
+                                    <a class="comment__date" name="fake-link-to-prevent-date-parsing-by-browser">
+                                        21 октября 2024
+                                    </a>
+                                </div>
                             </div>
-                            <a class="comment__date" name="fake-link-to-prevent-date-parsing-by-browser">
-                                21 октября 2024
-                            </a>
+                            <div class="swiper-slide">
+                                <div class="comment">
+                                    <div class="comment__head">
+                                        <div class="comment__summary">
+                                            <div class="comment__prefix">
+                                                должность клиента
+                                            </div>
+                                            <div class="comment__name">
+                                                Лидия Петрова
+                                            </div>
+                                            <div class="comment__rating">
+                                                <div class="stars">
+                                                    <div class="stars__progress" style="width: 50%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment__author"><!-- comment__author можно сделать тегом <a> -->
+                                            <img class="comment__photo" src="../content/comment-placeholder.svg" width="60" height="60" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="comment__message">
+                                        Lorem ipsum dolor sit amet consectetur. Luctus senectus est quam sit vivamus sed feugiat in sed. Viverra nibh pulvinar purus scelerisque enim. Tempor mi sed quam cras faucibus.
+                                    </div>
+                                    <div class="comment__link">
+                                        <a class="link" href="#">Читать на яндекс-картах</a>
+                                    </div>
+                                    <a class="comment__date" name="fake-link-to-prevent-date-parsing-by-browser">
+                                        21 октября 2024
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="comment">
+                                    <div class="comment__head">
+                                        <div class="comment__summary">
+                                            <div class="comment__prefix">
+                                                должность клиента
+                                            </div>
+                                            <div class="comment__name">
+                                                Лидия Петрова
+                                            </div>
+                                            <div class="comment__rating">
+                                                <div class="stars">
+                                                    <div class="stars__progress" style="width: 50%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment__author"><!-- comment__author можно сделать тегом <a> -->
+                                            <img class="comment__photo" src="../content/comment-placeholder.svg" width="60" height="60" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="comment__message">
+                                        Lorem ipsum dolor sit amet consectetur. Luctus senectus est quam sit vivamus sed feugiat in sed. Viverra nibh pulvinar purus scelerisque enim. Tempor mi sed quam cras faucibus.
+                                    </div>
+                                    <div class="comment__link">
+                                        <a class="link" href="#">Читать на яндекс-картах</a>
+                                    </div>
+                                    <a class="comment__date" name="fake-link-to-prevent-date-parsing-by-browser">
+                                        21 октября 2024
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="comment">
+                                    <div class="comment__head">
+                                        <div class="comment__summary">
+                                            <div class="comment__prefix">
+                                                должность клиента
+                                            </div>
+                                            <div class="comment__name">
+                                                Лидия Петрова
+                                            </div>
+                                            <div class="comment__rating">
+                                                <div class="stars">
+                                                    <div class="stars__progress" style="width: 50%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment__author"><!-- comment__author можно сделать тегом <a> -->
+                                            <img class="comment__photo" src="../content/comment-placeholder.svg" width="60" height="60" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="comment__message">
+                                        Lorem ipsum dolor sit amet consectetur. Luctus senectus est quam sit vivamus sed feugiat in sed. Viverra nibh pulvinar purus scelerisque enim. Tempor mi sed quam cras faucibus.
+                                    </div>
+                                    <div class="comment__link">
+                                        <a class="link" href="#">Читать на яндекс-картах</a>
+                                    </div>
+                                    <a class="comment__date" name="fake-link-to-prevent-date-parsing-by-browser">
+                                        21 октября 2024
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="comment">
+                                    <div class="comment__head">
+                                        <div class="comment__summary">
+                                            <div class="comment__prefix">
+                                                должность клиента
+                                            </div>
+                                            <div class="comment__name">
+                                                Лидия Петрова
+                                            </div>
+                                            <div class="comment__rating">
+                                                <div class="stars">
+                                                    <div class="stars__progress" style="width: 50%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment__author"><!-- comment__author можно сделать тегом <a> -->
+                                            <img class="comment__photo" src="../content/comment-placeholder.svg" width="60" height="60" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="comment__message">
+                                        Lorem ipsum dolor sit amet consectetur. Luctus senectus est quam sit vivamus sed feugiat in sed. Viverra nibh pulvinar purus scelerisque enim. Tempor mi sed quam cras faucibus.
+                                    </div>
+                                    <div class="comment__link">
+                                        <a class="link" href="#">Читать на яндекс-картах</a>
+                                    </div>
+                                    <a class="comment__date" name="fake-link-to-prevent-date-parsing-by-browser">
+                                        21 октября 2024
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="comment">
+                                    <div class="comment__head">
+                                        <div class="comment__summary">
+                                            <div class="comment__prefix">
+                                                должность клиента
+                                            </div>
+                                            <div class="comment__name">
+                                                Лидия Петрова
+                                            </div>
+                                            <div class="comment__rating">
+                                                <div class="stars">
+                                                    <div class="stars__progress" style="width: 50%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment__author"><!-- comment__author можно сделать тегом <a> -->
+                                            <img class="comment__photo" src="../content/comment-placeholder.svg" width="60" height="60" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="comment__message">
+                                        Lorem ipsum dolor sit amet consectetur. Luctus senectus est quam sit vivamus sed feugiat in sed. Viverra nibh pulvinar purus scelerisque enim. Tempor mi sed quam cras faucibus.
+                                    </div>
+                                    <div class="comment__link">
+                                        <a class="link" href="#">Читать на яндекс-картах</a>
+                                    </div>
+                                    <a class="comment__date" name="fake-link-to-prevent-date-parsing-by-browser">
+                                        21 октября 2024
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-controls">
+                            <div class="swiper-button swiper-button-prev">
+                                <svg class="swiper-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 12" fill="none" id="left-7-12">
+                                    <path d="M6 1L1 6L6 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-pagination">
+
+                            </div>
+                            <div class="swiper-button swiper-button-next">
+                                <svg class="swiper-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 12" fill="none" id="right-7-12">
+                                    <path d="M1 1L6 6L1 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                         </div>
                     </div>
 
