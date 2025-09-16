@@ -111,7 +111,8 @@
 
     .request {
         padding: 321px 24px 60px;
-        background-size: auto 281px;
+        background-size: auto 363px;
+        background-position: left top;
         background-image: url("../images/request-smartphone@1x.jpg");
         border-radius: 0;
     }
